@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class DataEncapsulation{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		Method m=new Method();
+		System.out.println("Enter your name : ");
+		m.setName(sc.next());
+		System.out.println("Enter your age : ");
+		m.setAge(nextInt());
+		System.out.println("your name is "+m.getName()+" and your age is "+getAge());	
+	}
+}
+class Method{
+	priate String name;
+	private int age;
+
+	public void setName(String name){
+		this.name=name;
+	}
+	public String getName(){
+		return name;
+	}
+
+	public void setAge(int age){
+		this.age=age;
+	}
+	pubkic int getAge(){
+		return age;
+	}
+}
