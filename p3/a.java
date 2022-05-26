@@ -1,0 +1,21 @@
+public class a{
+	public static void main(String[] args){
+	B b=new B();
+	C c=new C();
+	c.setp(b.getprice());
+	System.out.println("the value p is "+c.p);	
+	}
+}
+class B{
+	public float price=70.50f;
+	public float getprice(){
+		return price;
+	}
+}
+class C{
+	public float p;
+	public void setp(float f){
+		p=f;
+	}
+
+}
